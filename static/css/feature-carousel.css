@@ -1,0 +1,58 @@
+/********************
+ * FEATURE CAROUSEL *
+ ********************/
+.carousel-container {
+  position:relative;
+  width:1160px;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+#carousel {
+  height:500px;
+  width:1160px;
+  position:relative;
+}
+.carousel-image {
+  border:0;
+  display:block;
+}
+.carousel-feature {
+  position:absolute;
+  cursor:pointer;
+}
+.tracker-individual-container {
+  position:absolute;
+  width: 100%;
+  bottom: 20px;
+  left: 0px;
+  text-align: center;
+}
+.tracker-individual-container li {
+  display: inline;
+  list-style:none;
+  margin-right: 20px;
+}
+.tracker-individual-container .tracker-individual-blip {
+ width: 15px;
+ height: 15px;
+ border-radius: 50%;
+ background: #FFFFFF;
+ font-size: 0px;
+ display: inline-block;
+}
+.tracker-individual-container .tracker-individual-blip-selected {
+   background: #1BBC9B;
+    display: inline-block;
+}
+#carousel-left {
+  position:absolute;
+  bottom:33px;
+  left:220px;
+  cursor:pointer;
+}
+#carousel-right {
+  position:absolute;
+  bottom:33px;
+  right:220px;
+  cursor:pointer;
+}

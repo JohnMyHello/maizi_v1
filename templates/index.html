@@ -1,0 +1,500 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="{% static 'css/jquery.jscrollpane.css' %} " />
+		<link rel="stylesheet" href="{% static 'css/feature-carousel.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+		<script src="{% static 'js/jquery-1.11.1.min.js' %}" type="text/javascript" charset="utf-8"></script>
+		<script src="{% static 'js/jquery.mousewheel.js' %}" type="text/javascript" charset="utf-8"></script>
+		<script src="{% static 'js/jquery.jscrollpane.min.js' %}" type="text/javascript" charset="utf-8"></script>
+		<script src="{% static 'js/jquery-migrate-1.2.1.min.js' %}" type="text/javascript" charset="utf-8"></script>
+		<script src="{% static 'js/jquery.featureCarousel.min.js' %}" type="text/javascript" charset="utf-8"></script>
+		<script src="{% static 'js/jquery.carouFredSel.min.js' %}" type="text/javascript" charset="utf-8"></script>
+		<script src="{% static 'js/index.js' %}" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="menu container">
+				<div class="menu-left">
+					<a href="">
+						<img src="{% static 'img/logo.png' %}" class="logo"/>
+						<img src="{% static 'img/logo-font.png' %}" class="logo-font"/>
+					</a>
+				</div>
+				<!--menu left end-->
+				<div class="menu-right fr">
+					<ul class="main-menu fl">
+						<li><a href="">职业课程</a></li>
+						<li><a href="">论坛</a></li>
+						<li><a href="">移动APP</a></li>
+					</ul>
+					<!--main menu end-->
+					<div class="searchform fl">
+						<form action="" method="post">
+							<input type="text" id="course" name="" placeholder="搜索你感兴趣的课程"/>
+							<input type="submit" id="submit" value=""/>
+						</form>
+						<div class="suggestion">
+							<dl>
+								<dt>推荐搜索关键词</dt>
+								<dd>
+									<a href="">Android</a>
+									<a href="">Android</a>
+									<a href="">Android</a>
+									<a href="">Android</a>
+									<a href="">Android</a>
+									<a href="">Android</a>
+									<a href="">Android</a>
+									<a href="">Android</a>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="search-result">
+						<div class="relative">
+						<dl>
+							<dt>职业课程</dt>
+							<dd>
+								<a href="" style="background: #A8C310;">Android应用开发工程</a>
+								<a href="" style="background: #5184CF;">Android架构设计师</a>
+								<a href="" style="background: #5DB836;">Android的层嵌入式工</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>其他课程</dt>
+							<dd>
+								<a href="" style="background: #A8C310;">Android应用开发工程</a>
+								<a href="" style="background: #5184CF;">Android架构设计师</a>
+								<a href="" style="background: #5DB836;">Android的层嵌入式工</a>
+								<a href="" style="background: #A8C310;">Android应用开发工程</a>
+								<a href="" style="background: #5184CF;">Android架构设计师</a>
+								<a href="" style="background: #5DB836;">Android的层嵌入式工</a>
+								<a href="" style="background: #A8C310;">Android应用开发工程</a>
+								<a href="" style="background: #5184CF;">Android架构设计师</a>
+								<a href="" style="background: #5DB836;">Android的层嵌入式工</a>
+								<a href="" style="background: #A8C310;">Android应用开发工程</a>
+								<a href="" style="background: #5184CF;">Android架构设计师</a>
+								<a href="" style="background: #5DB836;">Android的层嵌入式工</a>
+								<a href="" style="background: #A8C310;">Android应用开发工程</a>
+								<a href="" style="background: #5184CF;">Android架构设计师</a>
+								<a href="" style="background: #5DB836;">Android的层嵌入式工</a>
+								<a href="" style="background: #A8C310;">Android应用开发工程</a>
+								<a href="" style="background: #5184CF;">Android架构设计师</a>
+								<a href="" style="background: #5DB836;">Android的层嵌入式工</a>
+							</dd>
+						</dl>
+						</div>
+					</div>
+					<!--search form end-->
+					<div class="person-info fl">
+						<a href="javascript:;" class="p-name fl">
+							<span>184545848</span>
+							<i></i>
+						</a>
+						<a href="" class="p-action fl">
+							<i></i>
+							<span>3</span>
+						</a>
+						<div id="p-drop">
+							<img src="{% static 'img/15.jpg' %}" alt="" class="p-img"/>
+							<a href="" class="p-number">184545848</a>
+							<p class="p-email">184545848@mail.com</p>
+							<a href="" class="p-center">进入个人中心</a>
+							<a href="" class="p-reset">注销</a>
+						</div>
+					</div>
+					<!--person info end-->
+				</div>
+			</div>
+		</div>
+		<!--header end-->
+		<div id="banner">
+			<div class="carousel-container"> 
+		      <div id="carousel">
+		        <div class="carousel-feature">
+		          <a href="#"><img class="carousel-image" alt="Image Caption" src="{% static 'img/1.jpg' %}"></a>
+		        </div>
+		        <div class="carousel-feature">
+		          <a href="#"><img class="carousel-image" alt="Image Caption" src="{% static 'img/1.jpg' %}"></a>
+		        </div>
+		        <div class="carousel-feature">
+		          <a href="#"><img class="carousel-image" alt="Image Caption" src="{% static 'img/1.jpg' %}"></a>
+		        </div>
+		      </div>
+		    </div> 
+		</div>
+		<!--banner end-->
+		<div id="maizi-course">
+			<div class="com-top">
+				<div class="container">
+					<a href="javascript:;">最新课程</a>
+					<a href="javascript:;">最多播放</a>
+					<a href="javascript:;">最具人气</a>
+				</div>
+			</div>
+			<div class="container single-c">
+				<ul class="course-list on">
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门1</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+				</ul>
+				<!--course list end-->
+				<ul class="course-list">
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门2</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+				</ul>
+				<!--course list end-->
+				<ul class="course-list">
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门3</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="{% static 'img/17.jpg' %}"/>
+							<span class="c-title">IO8 APP开发快速入门</span>
+							<span class="c-snum">1850人正在学习</span>
+						</a>
+					</li>
+				</ul>
+				<!--course list end-->
+				<div class="course-page">
+					<div class="page-num">
+					<a href="" class="prev"></a>
+					<a href="" class="select">1</a>
+					<a href="">2</a>
+					<a href="">3</a>
+					<a href="">4</a>
+					<a href="">5</a>
+					<a href="" class="next"></a>
+					</div>
+					<div class="line"></div>
+				</div>
+			</div>
+		</div>
+		<!--maizi course end-->
+		<div class="teacher">
+			<div class="com-top">
+				<div class="container">
+					<a href="">名师风采</a>
+				</div>
+			</div>
+			<div class="teacher-list container">
+				<div class="tc-scroll">
+				<ul>
+					<li>
+						<a href="" style="border-left-color: #00A388;"><img src="{% static 'img/2.png' %}"/></a>
+						<h2>杨丰盛</h2>
+						<p>安卓框架联盟总架构师</p>
+					</li>
+					<li>
+						<a href="" style="border-left-color: #FF6038;"><img src="{% static 'img/17.jpg' %}"/></a>
+						<h2>杨丰盛</h2>
+						<p>安卓框架联盟总架构师</p>
+					</li>
+					<li>
+						<a href="" style="border-left-color: #00A388;"><img src="{% static 'img/2.png' %}"/></a>
+						<h2>杨丰盛</h2>
+						<p>安卓框架联盟总架构师</p>
+					</li>
+					<li>
+						<a href="" style="border-left-color: #78BD8B;"><img src="{% static 'img/2.png' %}"/></a>
+						<h2>杨丰盛</h2>
+						<p>安卓框架联盟总架构师</p>
+					</li>
+					
+				</ul>
+				</div>
+				<a href="javascript:;" class="t-prev"></a>
+				<a href="javascript:;" class="t-next"></a>
+			</div>
+		</div>
+		<div class="relate-read">
+			<div class="com-top">
+				<div class="container">
+					<a href="">推荐阅读</a>
+				</div>
+			</div>
+			<div class="read container">
+				<div class="r-386">
+					<dl>
+						<dt>麦子百科</dt>
+						<dd>
+							<a href="">发现创新价值的科技媒体</a>
+							<a href="">iOS 和 Android 之争可以终结了</a>
+							<a href="">加码云计算市场，惠普近 1 亿收购云软件公司</a>
+							<a href="">HTC 智能手表：传并未放弃，正努力改进</a>
+							<a href="">第一次！首批 Android app 上架 Chrome</a>
+						</dd>
+					</dl>
+					<img src="{% static 'img/3.jpg' %}" alt="" />
+				</div>
+				<div class="r-388">
+					<img src="{% static 'img/4.jpg' %}" alt="" />
+					<dl>
+						<dt>麦子百科</dt>
+						<dd>
+							<a href="">发现创新价值的科技媒体</a>
+							<a href="">iOS 和 Android 之争可以终结了</a>
+							<a href="">加码云计算市场，惠普近 1 亿收购云软件公司</a>
+							<a href="">HTC 智能手表：传并未放弃，正努力改进</a>
+							<a href="">第一次！首批 Android app 上架 Chrome</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="r-386">
+					<dl>
+						<dt>麦子百科</dt>
+						<dd>
+							<a href="">发现创新价值的科技媒体</a>
+							<a href="">iOS 和 Android 之争可以终结了</a>
+							<a href="">加码云计算市场，惠普近 1 亿收购云软件公司</a>
+							<a href="">HTC 智能手表：传并未放弃，正努力改进</a>
+							<a href="">第一次！首批 Android app 上架 Chrome</a>
+						</dd>
+					</dl>
+					<img src="{% static 'img/5.jpg' %}" alt="" />
+				</div>
+			</div>
+		</div>
+		<!--tuijian yuedu end-->
+		<div class="zhanlve">
+			<div class="com-top">
+				<div class="container">
+					<a href="">战略合作</a>
+				</div>
+			</div>
+			<ul class="container">
+				<li><a href=""><img src="{% static 'img/6.png' %}"/></a></li>
+				<li><a href=""><img src="{% static 'img/7.png' %}"/></a></li>
+				<li><a href=""><img src="{% static 'img/9.png' %}"/></a></li>
+				<li><a href=""><img src="{% static 'img/10.png' %}"/></a></li>
+			</ul>
+		</div>
+		<!--zhan lve he zuo end-->
+		<div id="footer">
+			<div class="container">
+				<div class="ft-top fl">
+					<dl class="fl flinks">
+						<dt>友情链接</dt>
+						<dd>
+							<a href="">网易云课堂</a><span>|</span>
+							<a href="">腾讯课堂</a><span>|</span>
+							<a href="">微信营销</a><span>|</span>
+							<a href="">文档转换网</a><span>|</span>
+							<a href="">浪曦IT视频</a><span>|</span>
+							<a href="">自主学习网</a><span>|</span>
+							<a href="">网易云课堂</a><span>|</span>
+							<a href="">腾讯课堂</a><span>|</span>
+							<a href="">微信营销</a><span>|</span>
+							<a href="">文档转换网</a><span>|</span>
+							<a href="">浪曦IT视频</a><span>|</span>
+							<a href="">自主学习网</a><span>|</span>
+							<a href="">网易云课堂</a><span>|</span>
+							<a href="">腾讯课堂</a><span>|</span>
+							<a href="">微信营销</a>
+						</dd>
+						<dd>
+							<a href="http://www.hao123.com">网易云课堂</a><span>|</span>
+							<a href="">腾讯课堂</a><span>|</span>
+							<a href="">微信营销</a><span>|</span>
+							<a href="">文档转换网</a><span>|</span>
+							<a href="">浪曦IT视频</a><span>|</span>
+							<a href="">自主学习网</a><span>|</span>
+							<a href="">网易云课堂</a><span>|</span>
+							<a href="">腾讯课堂</a><span>|</span>
+							<a href="">微信营销</a><span>|</span>
+							<a href="">文档转换网</a><span>|</span>
+							<a href="">浪曦IT视频</a><span>|</span>
+							<a href="">自主学习网</a><span>|</span>
+							<a href="">网易云课堂</a><span>|</span>
+							<a href="">腾讯课堂</a><span>|</span>
+							<a href="">微信营销</a>
+						</dd>
+					</dl>
+					<dl class="ft-nav fl">
+						<dt>网站导航</dt>
+						<dd><a href="">网站首页</a></dd>	
+						<dd><a href="">关于我们</a></dd>	
+						<dd><a href="">联系我们</a></dd>	
+						<dd><a href="">意见反馈</a></dd>	
+					</dl>
+					<dl class="ft-aboutus fr">
+						<dt>关注我们</dt>
+						<dd class="sina"><a href="">新浪微博</a></dd>	
+						<dd class="weixin"><a href="">官方微信</a></dd>	
+						<dd class="tenxun"><a href="">腾讯微博</a></dd>	
+					</dl>
+				</div>
+				<!--footer top end-->
+				<div class="copy">
+					<p>&copy; 2012-2014 maiziedu.com | 服务条款 | 蜀ICP备13014270号-4 Version 4.0.1 release20140721.1</p>
+				</div>
+			</div>
+		</div>
+		<!--footer end-->
+		<div id="feedback">
+			<div class="tip">意见反馈 <img id="control" src="{% static 'img/jia.png' %}"/></div>
+			<form action="" method="post">
+				<input class="text" type="text"  placeholder="请输入您的QQ号方便我们联系您"/>
+				<textarea class="msg" name="" rows="" cols="" placeholder="使用过程中有什么建议或意见请反馈给我们吧"></textarea>
+				<input type="submit" class="sub" value="反馈"/>
+			</form>
+		</div>
+	</body>
+</html>
